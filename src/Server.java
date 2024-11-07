@@ -22,11 +22,13 @@ public class Server {
                     printWriter.println("Сколько " + name + " Вам лет?");
                     final int age = Integer.parseInt(bufferedReader.readLine());
                     System.out.println("Мне " + age);
-                    if (age <= 17) {printWriter.println(name + " вам " + age + " лет и вам разрешен доступ к детскому контенту" +
-                            "Для завершения сеанса введите 'Пока'");
+                    if (age <= 17) {
+                        printWriter.println(name + " вам " + age + " лет и вам разрешен доступ к детскому контенту" +
+                                "Для завершения сеанса введите 'Пока'");
                     }
-                    if (age >= 18){printWriter.println(name + " вам " + age + " лет/года и вам разрешен доступ к контенту 18+." +
-                            "Для завершения сеанса введите 'Пока'" );
+                    if (age >= 18) {
+                        printWriter.println(name + " вам " + age + " лет/года и вам разрешен доступ к контенту 18+." +
+                                "Для завершения сеанса введите 'Пока'");
                     }
 
                     final String exit = bufferedReader.readLine();
